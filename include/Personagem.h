@@ -1,32 +1,30 @@
-#ifndef PERSONAGEM_H
-#define PERSONAGEM_H
-// esse bloco impede que o arquivo seja carregado mais de uma vez
-// evita erro de redefinicao da classe personagem
-
+#pragma once
 #include <string>
 #include <vector>
 
+class Evento; // declaração antecipada
+
 class Personagem {
 protected:
-    std::wstring nome;
-    int conforto;    // o quanto o personagem se sente bem
-    int estresse;    // o quanto o personagem se sente desconfortavel
-    std::vector<std::wstring> situacoes_passadas;
+    std::string nome;
+    int carisma;
+    int resistencia;
+    int inteligencia;
+    std::vector<Evento> eventos;
+    int eventoAtual = 0;
 
 public:
-    Personagem(std::wstring nome);
     virtual ~Personagem() = default;
 
-    std::wstring getNome() const;
-    int getConforto() const;
-    int getEstresse() const;
+    virtual void inicializarEventos() = 0;
+    virtual void tomarDecisao() = 0;
 
-    void aumentarConforto(int valor);
-    void aumentarEstresse(int valor);
+    void atualizarAtributos();
+    void proximoEvento(Evento& evento);
+    void gerarFeedback();
 
-    virtual void reagirSituacao(const std::wstring& situacao);
-
-    void mostrarEstado() const;
+    std::string getNome() const;
+    int getCarisma() const;
+    int getResistencia() const;
+    int getInteligencia() const;
 };
-
-#endif // PERSONAGEM_H

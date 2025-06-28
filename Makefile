@@ -2,40 +2,38 @@
 CXX = g++
 
 # flags para compilação
-# -Wall e -Wextra ativam warnings
-# -g3 ativa debug info
-# -Iinclude adiciona a pasta include para procurar os headers
 CXXFLAGS = -Wall -Wextra -g3 -Iinclude
 
 # pasta onde estão os arquivos fonte
 SRC = src
 
-# pasta para colocar o executavel gerado
+# pasta para colocar o executável gerado
 BIN = build
 
-# nome do executavel
+# nome do executável
 TARGET = $(BIN)/jogo.exe
 
 # arquivos fonte do projeto
-SRCS = $(SRC)/main.cpp $(SRC)/Personagem.cpp $(SRC)/Autista.cpp
+SRCS = \
+	$(SRC)/main.cpp \
+	$(SRC)/Personagem.cpp \
+	$(SRC)/Joao.cpp \
+	$(SRC)/Evento.cpp \
+	$(SRC)/Escolha.cpp
 
-# regra padrão: compila tudo e gera o executavel
+# regra padrão: compila tudo e gera o executável
 all: $(TARGET)
 
-# regra para compilar e linkar o executavel a partir dos fontes
+# cria o executável a partir dos arquivos fonte
 $(TARGET): $(SRCS)
-	# cria a pasta build caso nao exista
-	mkdir -p $(BIN)
-	# comando para compilar e linkar
+	@mkdir -p $(BIN)
 	$(CXX) $(CXXFLAGS) $(SRCS) -o $(TARGET)
 
-# regra para apagar o executavel e recompilar do zero
+# regra para apagar o executável
 clean:
-	rm -f $(TARGET)
+	rm -rf $(BIN)
 
-# rodar no terminal caso presice
-g++ -Wall -Wextra -g3 -Iinclude src/main.cpp src/Personagem.cpp src/Autista.cpp -o output/main.exe && output\main.exe
-
-# rodar o main.exe no terminal
-.\output\main.exe
-
+# comando manual para compilar e executar (caso queira rodar diretamente)
+run:
+	$(MAKE)
+	./$(TARGET)
