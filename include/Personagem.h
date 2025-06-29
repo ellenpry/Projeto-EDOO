@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include "Evento.h"
 
 class Evento; // declaração antecipada
 

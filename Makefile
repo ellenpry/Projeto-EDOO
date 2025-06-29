@@ -18,6 +18,8 @@ SRCS = \
 	$(SRC)/main.cpp \
 	$(SRC)/Personagem.cpp \
 	$(SRC)/Joao.cpp \
+	$(SRC)/Caio.cpp \
+	$(SRC)/Alice.cpp \
 	$(SRC)/Evento.cpp \
 	$(SRC)/Escolha.cpp
 
