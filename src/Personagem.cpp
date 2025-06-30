@@ -1,4 +1,5 @@
 #include "Personagem.h"
+#include <iostream>
 
 std::string Personagem::getNome() const {
     return nome;
@@ -26,4 +27,20 @@ int Personagem::getResistencia() const {
 
 int Personagem::getInteligencia() const {
     return inteligencia;
+}
+
+void Personagem::tomarDecisao() {
+    for (Evento& evento : eventos) {
+        evento.mostrarEvento();      // Mostra o evento + 3 opções
+
+        int escolha;
+        std::cin >> escolha;         // Jogador escolhe uma opção
+
+        evento.executarEscolha(escolha, this);  // Aplica efeitos
+
+        std::cout << "\nAtributos após decisão:\n";
+        std::cout << "Carisma: " << carisma << "\n";
+        std::cout << "Inteligência: " << inteligencia << "\n";
+        std::cout << "Resistência: " << resistencia << "\n";
+    }
 }

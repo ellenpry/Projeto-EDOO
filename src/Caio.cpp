@@ -1,4 +1,5 @@
 #include "Caio.h"
+#include "EventosCaio.h"
 #include <iostream>
 
 Caio::Caio() {
@@ -10,7 +11,10 @@ Caio::Caio() {
 
 void Caio::inicializarEventos() {
     std::cout << nome << " iniciou seus eventos!\n";
-    // Adicione aqui os eventos de Caio no futuro
+    eventos.push_back(criarEventoCaio1());
+    eventos.push_back(criarEventoCaio2());
+    eventos.push_back(criarEventoCaio3());
+    eventos.push_back(criarEventoCaio4());
 }
 
 void Caio::tomarDecisao() {

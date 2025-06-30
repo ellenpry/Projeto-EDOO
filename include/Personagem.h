@@ -12,19 +12,26 @@ protected:
     int resistencia;
     int inteligencia;
     std::vector<Evento> eventos;
-    int eventoAtual = 0;
 
 public:
     virtual ~Personagem() = default;
 
     virtual void inicializarEventos() = 0;
-    virtual void tomarDecisao() = 0;
+    virtual void tomarDecisao(); // Agora é implementado na base
 
     void atualizarAtributos();
     void proximoEvento(Evento& evento);
     void gerarFeedback();
+    void adicionarEvento(const Evento& evento); // novo método útil
 
     std::string getNome() const;
+
+    // getters para modificar os atributos
+    int& getCarisma();
+    int& getResistencia();
+    int& getInteligencia();
+
+    // getters constantes (somente leitura)
     int getCarisma() const;
     int getResistencia() const;
     int getInteligencia() const;
