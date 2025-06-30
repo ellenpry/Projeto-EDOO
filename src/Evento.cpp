@@ -20,7 +20,11 @@ void Evento::mostrarEvento() const {
 // aplica os efeitos da escolha no personagem
 void Evento::executarEscolha(int indice, Personagem* personagem) {
     if (indice >= 1 && indice <= static_cast<int>(opcoes.size())) {
-        opcoes[indice - 1].aplicarEfeitos();
+        opcoes[indice - 1].aplicarEfeitos(
+            personagem->getCarisma(),
+            personagem->getInteligencia(),
+            personagem->getResistencia()
+        );
     } else {
         std::cout << "Escolha inválida.\n";
     }

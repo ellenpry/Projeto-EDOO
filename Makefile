@@ -2,7 +2,7 @@
 CXX = g++
 
 # flags para compilação
-CXXFLAGS = -Wall -Wextra -g3 -Iinclude
+CXXFLAGS = -Wall -Wextra -g -std=c++17 -Iinclude
 
 # pasta onde estão os arquivos fonte
 SRC = src

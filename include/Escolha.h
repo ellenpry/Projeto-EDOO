@@ -1,20 +1,16 @@
-#ifndef ESCOLHA_H
-#define ESCOLHA_H
-
+#pragma once
 #include <string>
 
 class Escolha {
 private:
     std::string descricao;
-    int* carisma;
-    int* inteligencia;
-    int* resistencia;
+    int deltaCarisma;
+    int deltaInteligencia;
+    int deltaResistencia;
 
 public:
-    Escolha(const std::string& desc, int* carisma, int* inteligencia, int* resistencia);
+    Escolha(const std::string& desc, int carisma, int inteligencia, int resistencia);
 
-    void aplicarEfeitos() const;
+    void aplicarEfeitos(int& carisma, int& inteligencia, int& resistencia) const;
     std::string getDescricao() const;
 };
-
-#endif
