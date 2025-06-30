@@ -1,4 +1,5 @@
 #include "Alice.h"
+#include "EventosAlice.h"
 #include <iostream>
 
 Alice::Alice() {
@@ -10,7 +11,10 @@ Alice::Alice() {
 
 void Alice::inicializarEventos() {
     std::cout << nome << " iniciou seus eventos!\n";
-    // Adicione aqui os eventos de Alice no futuro
+    eventos.push_back(criarEventoAlice1());
+    eventos.push_back(criarEventoAlice2());
+    eventos.push_back(criarEventoAlice3());
+    eventos.push_back(criarEventoAlice4());
 }
 
 void Alice::tomarDecisao() {

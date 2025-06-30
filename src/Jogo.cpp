@@ -2,6 +2,9 @@
 #include "Joao.h"
 #include "Caio.h"
 #include "Alice.h"
+#include "EventosCaio.h"
+#include "EventosAlice.h"
+#include "EventosJoao.h"
 
 #include <iostream>
 
