@@ -18,6 +18,9 @@ void Caio::inicializarEventos() {
 }
 
 void Caio::tomarDecisao() {
+
+    Personagem::tomarDecisao();
+    
     std::cout << nome << " tomou uma decisão!\n";
     // Lógica específica de decisão de Caio
 }

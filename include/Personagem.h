@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <iostream>
 #include "Evento.h"
 
 class Evento; // declaração antecipada
@@ -17,13 +18,11 @@ public:
     virtual ~Personagem() = default;
 
     virtual void inicializarEventos() = 0;
-    virtual void tomarDecisao(); // Agora é implementado na base
-    virtual void gerarFeedback(); // Tornado virtual para permitir override
+    virtual void tomarDecisao();
+    virtual void gerarFeedback();
 
-    void atualizarAtributos();
-    void proximoEvento(Evento& evento);
-    void adicionarEvento(const Evento& evento); // novo método útil
-
+    void adicionarEvento(const Evento& evento);
+    
     std::string getNome() const;
 
     // getters para modificar os atributos
@@ -31,7 +30,7 @@ public:
     int& getResistencia();
     int& getInteligencia();
 
-    // getters constantes (somente leitura)
+    // getters constantes
     int getCarisma() const;
     int getResistencia() const;
     int getInteligencia() const;

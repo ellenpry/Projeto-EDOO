@@ -3,30 +3,30 @@
 #include <iostream>
 
 // construtor
-Evento::Evento(const std::string& contexto, const std::vector<Escolha>& opcoes)
+Evento::Evento(const std::string& contexto, const std::vector<Escolha>& opcoes) 
     : contexto(contexto), opcoes(opcoes) {}
 
-// exibe o texto do evento e as opções disponíveis
 void Evento::mostrarEvento() const {
-    std::cout << "\n--- EVENTO ---\n";
+    std::cout << "\n========================================\n";
     std::cout << contexto << "\n\n";
-
+    
     for (size_t i = 0; i < opcoes.size(); ++i) {
-        std::cout << (i + 1) << ") " << opcoes[i].getDescricao() << "\n";
+        std::cout << "[" << i + 1 << "] " << opcoes[i].getDescricao() << "\n";
     }
-    std::cout << "\nEscolha uma opção (1-" << opcoes.size() << "): ";
+    std::cout << "\nDigite o número da sua escolha (1-" << opcoes.size() << "): ";
 }
 
-// aplica os efeitos da escolha no personagem
 void Evento::executarEscolha(int indice, Personagem* personagem) {
-    if (indice >= 1 && indice <= static_cast<int>(opcoes.size())) {
-        opcoes[indice - 1].aplicarEfeitos(
+    if (indice >= 0 && indice < static_cast<int>(opcoes.size())) {
+        const Escolha& escolha = opcoes[indice];
+        escolha.aplicarEfeitos(
             personagem->getCarisma(),
             personagem->getInteligencia(),
             personagem->getResistencia()
         );
+        std::cout << "\nVocê escolheu: " << escolha.getDescricao() << "\n";
     } else {
-        std::cout << "Escolha inválida.\n";
+        std::cout << "\nEscolha inválida!\n";
     }
 }
 
