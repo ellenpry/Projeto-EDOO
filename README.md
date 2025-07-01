@@ -25,21 +25,7 @@ Desenvolvido como projeto final da disciplina **EDOO - Estrutura de Dados e Orie
 
 ## 📂 Estrutura de Pastas
 
-SocialQuest/
-├── include/              # Arquivos .h (headers)
-├── src/                  # Implementação dos arquivos .cpp
-├── output/               # Saída (ex: main.exe)
-├── docs/                 # Documentação, assets e estilos
-│   ├── assets/           # Imagens ilustrativas do projeto
-│   ├── index.html        # Página de documentação do projeto
-│   └── style.css         # Estilos da documentação
-├── .vscode/              # Configurações de build para o VSCode
-│   ├── tasks.json
-│   ├── settings.json
-│   └── c_cpp_properties.json
-├── .gitignore
-├── Makefile              # Build automatizado
-└── README.md             # Documentação do projeto
+![Estrutura de Pastas](docs\assets\Estrutura.png)
 
 
 ## 🌟 Autoria
