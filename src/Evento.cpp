@@ -25,6 +25,7 @@ void Evento::executarEscolha(int indice, Personagem* personagem) {
             personagem->getResistencia()
         );
         std::cout << "\nVocê escolheu: " << escolha.getDescricao() << "\n";
+        std::cout << "Efeito: " << escolha.getImpacto() << "\n\n";
     } else {
         std::cout << "\nEscolha inválida!\n";
     }
