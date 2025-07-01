@@ -5,14 +5,19 @@
 Joao::Joao() {
     nome = "João";
     carisma = 3;
+    carismaInicial = 3;
+
     resistencia = 3;
+    resistenciaInicial = 3;
+
     inteligencia = 4;
+    inteligenciaInicial = 4;
 }
 
 void Joao::inicializarEventos() {
     eventos.clear();
     
-    std::cout << "Carregando eventos do João...\n";
+    std::cout << nome << " iniciou seus eventos!\n";
     eventos.push_back(criarEventoJoao1());
     eventos.push_back(criarEventoJoao2());
     eventos.push_back(criarEventoJoao3());
@@ -35,13 +40,28 @@ void Joao::gerarFeedback() {
     
     // Depois adiciona feedback específico do João
     std::cout << "\n=== FEEDBACK ESPECÍFICO DO JOÃO ===\n";
-    
-    if (inteligencia >= 5) {
-        std::cout << "João se saiu muito bem academicamente!\n";
+
+    if (carisma >= 4) {
+        std::cout << "João se relacionou bem com seus colegas, criando um clima amigável.\n";
     }
-    if (carisma >= 5) {
-        std::cout << "João foi muito sociável durante o período!\n";
+    else if (carisma < 4) {
+        std::cout << "João acabou se distanciando dos seus amigos... Eles aparentam estar magoados.\n";
     }
-    
+
+    if (resistencia >= 4) {
+        std::cout << "João realizou uma boa prova, devido as energias guardadas para a prova.\n";
+    }
+    else if (resistencia < 4) {
+        std::cout << "João estava exausto. Durante a prova, seu cansaço atrapalhou seus pensamentos.\n";
+    }
+
+    if (inteligencia >= 4) {
+        std::cout << "João estava bem preparado para prova, sua nota com certeza será boa!\n";
+    }
+    else if (inteligencia < 4) {
+        std::cout << "João poderia ter estudado mais... Quem sabe ele estuda mais na próxima.\n";
+    }
+
+
     std::cout << "===============================\n";
 }

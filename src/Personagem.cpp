@@ -19,9 +19,9 @@ void Personagem::tomarDecisao() {
 void Personagem::gerarFeedback() {
     std::cout << "\n=== ATRIBUTOS FINAIS ===" << std::endl;
     std::cout << "Nome: " << nome << std::endl;
-    std::cout << "Carisma: " << carisma << std::endl;
-    std::cout << "Resistencia: " << resistencia << std::endl;
-    std::cout << "Inteligencia: " << inteligencia << std::endl;
+    std::cout << "Carisma inicial: " << carismaInicial << " / Carisma final: " << carisma << std::endl;
+    std::cout << "Resistencia inicial: " << resistenciaInicial << " / Resistencia final: " << resistencia << std::endl;
+    std::cout << "Inteligencia inicial: " << inteligenciaInicial << " / Inteligencia final: " << inteligencia << std::endl;
 }
 
 void Personagem::adicionarEvento(const Evento& evento) {
