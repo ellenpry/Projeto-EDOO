@@ -4,11 +4,13 @@
 #include "Alice.h"
 #include <iostream>
 #include <limits>
-#include <locale.h>  // Para caracteres especiais no Windows
+//#include <locale.h>  // Para caracteres especiais no Windows
+#include <windows.h> // Para SetConsoleOutputCP
 
 void Jogo::iniciar() {
     // Configuração para caracteres especiais
-    setlocale(LC_ALL, "Portuguese");
+    //setlocale(LC_ALL, "Portuguese");
+    SetConsoleOutputCP(CP_UTF8); 
     
     std::cout << "Bem-vindo ao SocialQuest!\n";
     escolherPersonagem();
