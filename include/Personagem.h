@@ -18,10 +18,10 @@ public:
 
     virtual void inicializarEventos() = 0;
     virtual void tomarDecisao(); // Agora é implementado na base
+    virtual void gerarFeedback(); // Tornado virtual para permitir override
 
     void atualizarAtributos();
     void proximoEvento(Evento& evento);
-    void gerarFeedback();
     void adicionarEvento(const Evento& evento); // novo método útil
 
     std::string getNome() const;

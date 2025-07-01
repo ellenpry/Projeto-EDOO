@@ -22,3 +22,8 @@ void Joao::tomarDecisao() {
     // Lógica de escolha do usuário/jogador
     std::cout << nome << " tomou uma decisão!\n";
 }
+
+void Joao::gerarFeedback() {
+    std::cout << "\n=== FEEDBACK DO JOAO ===" << std::endl;
+    // Feedback personalizado
+}

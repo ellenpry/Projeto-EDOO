@@ -2,7 +2,7 @@
 #include "Escolha.h"
 
 Evento criarEventoJoao1() {
-    std::string contexto = "Com a prova chegando, João está pensando em  ir estudar na biblioteca do CCEN.";
+    std::string contexto = "Com a prova chegando, João está pensando em ir estudar na biblioteca do CCEN.";
 
     std::vector<Escolha> escolhas = {
         Escolha("Ir estudar por conta própria", 0, 1, -1),

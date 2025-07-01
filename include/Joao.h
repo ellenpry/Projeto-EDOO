@@ -7,4 +7,5 @@ public:
 
     void inicializarEventos() override;
     void tomarDecisao() override;
+    void gerarFeedback() override; // Implementação específica
 };

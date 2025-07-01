@@ -44,3 +44,11 @@ void Personagem::tomarDecisao() {
         std::cout << "Resistência: " << resistencia << "\n";
     }
 }
+
+void Personagem::gerarFeedback() {
+    std::cout << "\n=== FEEDBACK GERAL ===" << std::endl;
+    std::cout << "Nome: " << nome << std::endl;
+    std::cout << "Carisma: " << carisma << std::endl;
+    std::cout << "Resistencia: " << resistencia << std::endl;
+    std::cout << "Inteligencia: " << inteligencia << std::endl;
+}

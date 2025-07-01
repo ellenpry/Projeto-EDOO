@@ -4,7 +4,8 @@
 #include <string>
 #include <vector>
 #include "Escolha.h"
-#include "Personagem.h"
+
+class Personagem;
 
 class Evento {
 private:
