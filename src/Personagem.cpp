@@ -1,18 +1,43 @@
 #include "Personagem.h"
 #include <iostream>
 
+#include "Personagem.h"
+#include <iostream>
+
+#include "Personagem.h"
+#include <iostream>
+
 void Personagem::tomarDecisao() {
     for (Evento& evento : eventos) {
-        evento.mostrarEvento();
-        
         int escolha;
-        std::cin >> escolha;
-        std::cin.ignore();
+        bool valido = false;
+        
+        while (!valido) {
+            evento.mostrarEvento();
+            
+            if (!(std::cin >> escolha)) {
+                std::cin.clear(); // Limpa estado de erro
+                std::cin.ignore(10000, '\n'); // Limpa buffer
+                std::cout << "\nErro: Digite apenas números!\n";
+                continue;
+            }
+            
+            std::cin.ignore(10000, '\n'); // Limpa buffer
+            
+            // Converte size_t para int para evitar warning
+            int numOpcoes = static_cast<int>(evento.getOpcoes().size());
+            
+            if (escolha >= 1 && escolha <= numOpcoes) {
+                valido = true;
+            } else {
+                std::cout << "\nErro: Digite um número entre 1 e " << numOpcoes << "!\n";
+            }
+        }
         
         evento.executarEscolha(escolha - 1, this);
         
         std::cout << "\nPressione Enter para continuar...";
-        std::cin.ignore();
+        std::cin.ignore(10000, '\n');
     }
 }
 

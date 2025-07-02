@@ -20,38 +20,41 @@ void Jogo::iniciar() {
 
 void Jogo::escolherPersonagem() {
     int escolha;
-    do {
+    bool valido = false;
+
+    while (!valido) {
         std::cout << "\nEscolha seu personagem:\n";
         std::cout << "1 - João\n";
         std::cout << "2 - Caio\n";
         std::cout << "3 - Alice\n";
         std::cout << "Sua escolha: ";
-        
-        std::cin >> escolha;
-        
-        if (std::cin.fail()) {
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Entrada inválida. Por favor, digite 1, 2 ou 3.\n";
+
+        if (!(std::cin >> escolha)) {
+            std::cin.clear(); // limpa o estado de erro
+            std::cin.ignore(10000, '\n'); // limpa o buffer
+            std::cout << "\nErro: Digite apenas números!\n";
             continue;
         }
-    } while (escolha < 1 || escolha > 3);
+
+        std::cin.ignore(10000, '\n');
+
+        if (escolha >= 1 && escolha <= 3) {
+            valido = true;
+        } else {
+            std::cout << "\nErro: Digite um número entre 1 e 3!\n";
+        }
+    }
 
     switch (escolha) {
-        case 1: 
-            personagemAtual = std::make_unique<Joao>();
-            break;
-        case 2: 
-            personagemAtual = std::make_unique<Caio>();
-            break;
-        case 3: 
-            personagemAtual = std::make_unique<Alice>();
-            break;
+        case 1: personagemAtual = std::make_unique<Joao>(); break;
+        case 2: personagemAtual = std::make_unique<Caio>(); break;
+        case 3: personagemAtual = std::make_unique<Alice>(); break;
     }
 
     std::cout << "\nPersonagem escolhido: " << personagemAtual->getNome() << "\n";
     personagemAtual->inicializarEventos();
 }
+
 
 void Jogo::jogarEventos() {
     if (!personagemAtual) {
