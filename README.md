@@ -23,11 +23,6 @@ Desenvolvido como projeto final da disciplina **EDOO - Estrutura de Dados e Orie
 - ✅ Estrutura de decisão e repetição com uso de `std::vector` e laços.
 
 
-## 📂 Estrutura de Pastas
-
-![Estrutura de Pastas](docs\assets\Estrutura.png)
-
-
 ## 🌟 Autoria
 
 Projeto desenvolvido por Júlia Maria, Lucas Emmanuel, Millena Ellen e Vinícius Albuquerque.
