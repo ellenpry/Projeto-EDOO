@@ -14,4 +14,8 @@ public:
     void escolherPersonagem();
     void jogarEventos();
     void finalizar();
+
+    void mostrarMenu();
+    void mostrarPersonagens();
+    void mostrarAtributos();
 };

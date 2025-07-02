@@ -32,7 +32,7 @@ void Jogo::escolherPersonagem() {
         if (!(std::cin >> escolha)) {
             std::cin.clear(); // limpa o estado de erro
             std::cin.ignore(10000, '\n'); // limpa o buffer
-            std::cout << "\nErro: Digite apenas números!\n";
+            std::cout << "Erro: Digite apenas números!\n";
             continue;
         }
 
@@ -71,5 +71,4 @@ void Jogo::finalizar() {
     
     std::cout << "\n=== FIM DA JORNADA ===\n";
     personagemAtual->gerarFeedback();
-    std::cout << "\nObrigado por jogar SocialQuest!\n";
 }
