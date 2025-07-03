@@ -15,6 +15,7 @@ protected:
     int carismaInicial;
     int resistenciaInicial;
     int inteligenciaInicial;
+    int pontucaoTotal;
     std::vector<Evento> eventos;
 
 public:

@@ -52,7 +52,7 @@ void Caio::gerarFeedback() {
         std::cout << "Caio acaba numa colocação não tão boa. As incertezas tomam conta no momento.\n";
     }
 
-     if (inteligencia >= 4) {
+    if (inteligencia >= 4) {
         std::cout << "Caio fica orgulhoso ao ver que tomou as melhores escolhas, independente do resultado.\n";
     }
     else if (inteligencia < 4) {
@@ -60,4 +60,22 @@ void Caio::gerarFeedback() {
     }
     
     std::cout << "=================================\n";
+
+    pontucaoTotal = resistencia * 3 + carisma * 2 + inteligencia;
+
+    std::cout << "\n=== RESULTADO FINAL ===\n";
+
+    if (pontucaoTotal >= 30) {
+        std::cout << "Caio fica emocionado ao ver seu nome entre os primeiros colocados da competição! Seu desempenho foi impecável!\n";
+        std::cout << "Os juízes o observam com admiração, e o público o ovaciona. Ele não só se classifica, como se torna um dos favoritos ao título.\n";
+    }
+    else if (pontucaoTotal >= 15 && pontucaoTotal < 30) {
+        std::cout << "Caio respira fundo ao ouvir o resultado. Foi por pouco, mas ele conseguiu se classificar.\n";
+        std::cout << "A performance não foi brilhante, mas suficiente para passar. Ele sabe que há margem para melhorar.\n";
+    }
+    else {
+        std::cout << "O silêncio pesa quando Caio vê seu nome fora da lista de classificados.\n";
+        std::cout << "Apesar do esforço, o desempenho ficou abaixo do esperado. Ele sente o impacto das suas decisões, mas sabe que faz parte da vida.\n";
+    }
+
 }
