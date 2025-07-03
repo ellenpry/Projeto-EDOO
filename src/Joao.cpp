@@ -64,4 +64,21 @@ void Joao::gerarFeedback() {
 
 
     std::cout << "===============================\n";
+
+    pontucaoTotal = resistencia * 3 + carisma * 2 + inteligencia;
+
+    std::cout << "\n=== RESULTADO FINAL ===\n";
+
+    if (pontucaoTotal >= 30) {
+        std::cout << "João teve um desempenho excelente! Ele estudou bastante e se preparou muito bem para a prova.\n";
+        std::cout << "Tudo indica que sua nota será muito boa e ele está no caminho certo para o sucesso.\n";
+    }
+    else if (pontucaoTotal >= 25 && pontucaoTotal < 30) {
+        std::cout << "João mostrou pontos positivos em sua prova, mas ainda há aspectos que podem ser melhorados.\n";
+        std::cout << "Com mais atenção e preparo, ele tem potencial para melhorar bastante nas próximas avaliações.\n";
+    }
+    else {
+        std::cout << "João enfrentou dificuldades durante a prova. Seu preparo deixou a desejar.\n";
+        std::cout << "É importante que ele se dedique mais e cuide do seu bem-estar para alcançar melhores resultados.\n";
+    }
 }

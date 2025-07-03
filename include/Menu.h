@@ -8,4 +8,5 @@ private:
     void mostrarPersonagens();
     void mostrarAtributos();
     bool desejaJogarNovamente(); // ← nova função
+    void sobreJogo();
 };

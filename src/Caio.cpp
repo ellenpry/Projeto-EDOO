@@ -69,7 +69,7 @@ void Caio::gerarFeedback() {
         std::cout << "Caio fica emocionado ao ver seu nome entre os primeiros colocados da competição! Seu desempenho foi impecável!\n";
         std::cout << "Os juízes o observam com admiração, e o público o ovaciona. Ele não só se classifica, como se torna um dos favoritos ao título.\n";
     }
-    else if (pontucaoTotal >= 15 && pontucaoTotal < 30) {
+    else if (pontucaoTotal >= 25 && pontucaoTotal < 30) {
         std::cout << "Caio respira fundo ao ouvir o resultado. Foi por pouco, mas ele conseguiu se classificar.\n";
         std::cout << "A performance não foi brilhante, mas suficiente para passar. Ele sabe que há margem para melhorar.\n";
     }

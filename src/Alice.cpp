@@ -66,4 +66,21 @@ void Alice::gerarFeedback() {
 
     
     std::cout << "=================================\n";
+
+    pontucaoTotal = carisma * 3 + inteligencia * 2 + resistencia;
+
+    std::cout << "\n=== RESULTADO FINAL ===\n";
+
+    if (pontucaoTotal >= 30) {
+        std::cout << "Alice teve uma entrevista excelente! Seu conhecimento, carisma e energia conquistaram a equipe completamente.\n";
+        std::cout << "Ela está muito bem preparada e tem tudo para alcançar grandes resultados.\n";
+    }
+    else if (pontucaoTotal >= 25 && pontucaoTotal < 30) {
+        std::cout << "Alice apresentou um desempenho satisfatório, com pontos fortes evidentes, mas ainda pode melhorar em alguns aspectos.\n";
+        std::cout << "Com um pouco mais de foco, ela pode se destacar muito mais nas próximas oportunidades.\n";
+    }
+    else {
+        std::cout << "Alice enfrentou dificuldades durante a entrevista. Seu desempenho deixou a desejar em vários pontos importantes.\n";
+        std::cout << "Será fundamental trabalhar no preparo, controle emocional e disposição para melhorar nos próximos desafios.\n";
+    }
 }
