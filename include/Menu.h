@@ -1,12 +1,14 @@
 #pragma once
 #include "Jogo.h"
 
+// Classe responsável pelo menu principal
 class Menu {
 public:
-    void exibir(Jogo& jogo); // controla o menu principal
+    void exibir(Jogo& jogo); // Controla o menu principal
 private:
-    void mostrarPersonagens();
-    void mostrarAtributos();
-    bool desejaJogarNovamente(); // ← nova função
-    void sobreJogo();
+    // Métodos auxiliares para o menu
+    void mostrarPersonagens();      
+    void mostrarAtributos();        
+    bool desejaJogarNovamente();   
+    void sobreJogo();              
 };

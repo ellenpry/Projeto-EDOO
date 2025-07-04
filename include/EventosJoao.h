@@ -3,6 +3,7 @@
 
 #include "Evento.h"
 
+// Declaração das funções que criam eventos específicos para João
 Evento criarEventoJoao1();
 Evento criarEventoJoao2();
 Evento criarEventoJoao3();

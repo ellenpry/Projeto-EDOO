@@ -2,7 +2,9 @@
 #include "EventosJoao.h"
 #include <iostream>
 
+// Implementação da classe Joao
 Joao::Joao() {
+    // Inicializa os atributos específicos do João
     nome = "João";
     carisma = 3;
     carismaInicial = 3;
@@ -14,6 +16,7 @@ Joao::Joao() {
     inteligenciaInicial = 4;
 }
 
+// Inicializa os eventos específicos do João
 void Joao::inicializarEventos() {
     eventos.clear();
     
@@ -26,12 +29,11 @@ void Joao::inicializarEventos() {
     std::cout << eventos.size() << " eventos carregados para João\n";
 }
 
+
 void Joao::tomarDecisao() {
     // Chama a implementação base que mostra os eventos e processa escolhas
     Personagem::tomarDecisao();
-    
-    // Comportamento específico do João pode ser adicionado aqui
-    // std::cout << "João fez algo especial!\n";
+
 }
 
 void Joao::gerarFeedback() {
@@ -62,11 +64,12 @@ void Joao::gerarFeedback() {
         std::cout << "João poderia ter estudado mais... Quem sabe ele estuda mais na próxima.\n";
     }
 
-
     std::cout << "===============================\n";
 
+    // Calcula a pontuação total com base nos atributos
     pontucaoTotal = inteligencia * 3 + resistencia * 2 + carisma;
 
+    // Exibe o resultado final com base na pontuação total
     std::cout << "\n=== RESULTADO FINAL ===\n";
 
     if (pontucaoTotal >= 30) {

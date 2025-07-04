@@ -1,6 +1,7 @@
 #include "EventosJoao.h"
 #include "Escolha.h"
 
+// Cria o primeiro evento de João
 Evento criarEventoJoao1() {
     std::string contexto = "Com a prova chegando, João está pensando em ir estudar na biblioteca do CCEN.";
 
@@ -16,6 +17,7 @@ Evento criarEventoJoao1() {
     return Evento(contexto, escolhas);
 }
 
+// Cria o segundo evento de João
 Evento criarEventoJoao2() {
     std::string contexto = "O estresse pré-prova está acabando com o clima dentro de sala de aula. Percebendo isso, Marcos, grande amigo de João, o chama pra sair na sexta-feira e tomar umazinha.";
 
@@ -31,6 +33,7 @@ Evento criarEventoJoao2() {
     return Evento(contexto, escolhas);
 }
 
+// Cria o terceiro evento de João
 Evento criarEventoJoao3() {
     std::string contexto = "O Grande Sábio da Área 2, William vai dar um aulão pré-prova!!! Será que João deve participar?";
 
@@ -46,6 +49,7 @@ Evento criarEventoJoao3() {
     return Evento(contexto, escolhas);
 }
 
+// Cria o quarto evento de João
 Evento criarEventoJoao4() {
     std::string contexto = "No dia da prova, João é chamado para revisar com os colegas antes da prova. Eles sabem que João é a pessoa mais preparada para prova.";
 

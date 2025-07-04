@@ -2,7 +2,9 @@
 #include "EventosAlice.h"
 #include <iostream>
 
+// Implementação da classe Alice
 Alice::Alice() {
+    // Inicializa os atributos específicos da Alice
     nome = "Alice";
     carisma = 3;
     carismaInicial = 3;
@@ -15,31 +17,25 @@ Alice::Alice() {
 }
 
 void Alice::inicializarEventos() {
-    
+    // Inicializa os eventos específicos da Alice
     std::cout << nome << " iniciou seus eventos!\n";
     eventos.push_back(criarEventoAlice1());
     eventos.push_back(criarEventoAlice2());
     eventos.push_back(criarEventoAlice3());
     eventos.push_back(criarEventoAlice4());
-    
 }
 
 void Alice::tomarDecisao() {
     // Chama a implementação base que mostra os eventos e processa escolhas
     Personagem::tomarDecisao();
-
     std::cout << nome << " tomou uma decisão!\n";
-    
-    // Comportamento específico da Alice pode ser adicionado aqui
-    // std::cout << "Alice fez algo único!\n";
 }
 
-// Opcional: Adicione feedback específico da Alice
+// Gera feedback específico da Alice após as decisões
 void Alice::gerarFeedback() {
-    // Primeiro chama o feedback base
     Personagem::gerarFeedback();
     
-    // Depois adiciona feedback específico
+    // Feedback específico da Alice
     std::cout << "\n=== FEEDBACK ESPECÍFICO DA ALICE ===\n";
     
     if (inteligencia >= 4) {
@@ -56,7 +52,6 @@ void Alice::gerarFeedback() {
         std::cout << "Alice estava muito estressada, o que claramente foi percebido pela equipe de entrevista.\n";
     }
 
-
     if (resistencia >= 4) {
         std::cout << "Alice estava descansada para a entrevista, deixando-a mais animada.\n";
     }
@@ -64,12 +59,13 @@ void Alice::gerarFeedback() {
         std::cout << "Alice estava cansada para a entrevista, seu humor não estava dos melhores.\n";
     }
 
-    
     std::cout << "=================================\n";
 
+    // Cálculo da pontuação total
     pontucaoTotal = carisma * 3 + inteligencia * 2 + resistencia;
 
-    std::cout << "\n=== RESULTADO FINAL ===\n";
+    // Exibe o resultado final de acordo com a pontuação total
+    std::cout << "\n===== RESULTADO FINAL =====\n";
 
     if (pontucaoTotal >= 30) {
         std::cout << "Alice teve uma entrevista excelente! Seu conhecimento, carisma e energia conquistaram a equipe completamente.\n";

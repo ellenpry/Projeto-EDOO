@@ -1,6 +1,7 @@
 #include "EventosAlice.h"
 #include "Escolha.h"
 
+// Cria o primeiro evento de Alice
 Evento criarEventoAlice1() {
     std::string contexto = "Alice está concentrada finalizando uma tarefa quando é chamada de surpresa para uma reunião com gestores de outro setor. não houve briefing prévio, e ela não sabe se precisará se posicionar ou apenas acompanhar. todos na sala parecem mais experientes, o que a deixa um pouco insegura.";
 
@@ -16,6 +17,7 @@ Evento criarEventoAlice1() {
     return Evento(contexto, escolhas);
 }
 
+// Cria o segundo evento de Alice
 Evento criarEventoAlice2() {
     std::string contexto = "A equipe de Alice organiza uma happy hour de última hora para descontrair depois de uma semana intensa. ela foi convidada e sabe que seria bom se enturmar, mas está cansada e prefere dormir cedo para manter a rotina antes da entrevista.";
 
@@ -31,6 +33,7 @@ Evento criarEventoAlice2() {
     return Evento(contexto, escolhas);
 }
 
+// Cria o terceiro evento de Alice
 Evento criarEventoAlice3() {
     std::string contexto = "Na véspera da entrevista, Alice se sente nervosa e começa a duvidar de si mesma. ela pensa em revisar tudo de novo, mas também considera tentar relaxar. a ansiedade pesa, e ela precisa decidir como enfrentar a noite para chegar bem ao dia seguinte.";
 
@@ -46,6 +49,7 @@ Evento criarEventoAlice3() {
     return Evento(contexto, escolhas);
 }
 
+// Cria o quarto evento de Alice
 Evento criarEventoAlice4() {
     std::string contexto = "Parecendo nervosa, seus pais percebem que Alice não está apta para ir sozinha para a Empresa. Eles perguntam se Alice quer carona para entrevista.";
 

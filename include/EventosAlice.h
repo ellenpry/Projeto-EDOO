@@ -3,6 +3,7 @@
 
 #include "Evento.h"
 
+// Declaração das funções que criam eventos específicos para Alice
 Evento criarEventoAlice1();
 Evento criarEventoAlice2();
 Evento criarEventoAlice3();

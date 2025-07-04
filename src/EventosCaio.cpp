@@ -1,6 +1,7 @@
 #include "EventosCaio.h"
 #include "Escolha.h"
 
+// Cria o primeiro evento de Caio
 Evento criarEventoCaio1() {
     std::string contexto = "Durante um treino intenso, Caio sente um desconforto incomum na perna. Ainda não é uma lesão grave, mas algo parece errado.";
 
@@ -16,6 +17,7 @@ Evento criarEventoCaio1() {
     return Evento(contexto, escolhas);
 }
 
+// Cria o segundo evento de Caio
 Evento criarEventoCaio2() {
     std::string contexto = "Uma empresa de apostas esportivas propõe patrocinar Caio com alto valor e visibilidade. A proposta divide opiniões entre colegas e seu treinador.";
 
@@ -31,6 +33,7 @@ Evento criarEventoCaio2() {
     return Evento(contexto, escolhas);
 }
 
+// Cria o terceiro evento de Caio
 Evento criarEventoCaio3() {
     std::string contexto = "Na véspera da prova, os colegas chamam Caio para uma festa";
 
@@ -46,6 +49,7 @@ Evento criarEventoCaio3() {
     return Evento(contexto, escolhas);
 }
 
+// Cria o quarto evento de Caio
 Evento criarEventoCaio4() {
     std::string contexto = "Durante o fim treinamento, o treinador de Caio cobra a ele para se esforçar mais, mesmo estando extremamente cansado";
 

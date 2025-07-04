@@ -1,11 +1,12 @@
 #pragma once
 #include "Personagem.h"
 
+// Classe derivada de Personagem
 class Joao : public Personagem {
 public:
-    Joao();
+    Joao(); // Construtor
 
-    void inicializarEventos() override;
-    void tomarDecisao() override;
-    void gerarFeedback() override; // Implementação específica
+    void inicializarEventos() override; // Inicializa eventos de Joao
+    void tomarDecisao() override;       // Joao toma decisão
+    void gerarFeedback() override;      // Gera feedback
 };

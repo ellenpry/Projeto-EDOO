@@ -2,7 +2,10 @@
 #include "EventosCaio.h"
 #include <iostream>
 
+// Implementação da classe Caio
 Caio::Caio() {
+
+    // Inicializa os atributos específicos do Caio
     nome = "Caio";
     carisma = 3;
     carismaInicial = 3;
@@ -14,8 +17,9 @@ Caio::Caio() {
     inteligenciaInicial = 2;
 }
 
+// Inicializa os eventos específicos do Caio
 void Caio::inicializarEventos() {
-    
+
     std::cout << nome << " iniciou seus eventos!\n";
     eventos.push_back(criarEventoCaio1());
     eventos.push_back(criarEventoCaio2());
@@ -23,14 +27,15 @@ void Caio::inicializarEventos() {
     eventos.push_back(criarEventoCaio4());
 }
 
+// Chama a implementação base que mostra os eventos e processa escolhas
 void Caio::tomarDecisao() {
 
     Personagem::tomarDecisao();
     
     std::cout << nome << " tomou uma decisão!\n";
-    // Lógica específica de decisão de Caio
 }
 
+// Gera feedback específico
 void Caio::gerarFeedback() {
     // Primeiro chama o feedback base
     Personagem::gerarFeedback();
@@ -61,9 +66,11 @@ void Caio::gerarFeedback() {
     
     std::cout << "=================================\n";
 
+    // Cálculo da pontuação total
     pontucaoTotal = resistencia * 3 + carisma * 2 + inteligencia;
 
-    std::cout << "\n=== RESULTADO FINAL ===\n";
+    // Exibe o resultado final de acordo com a pontuação total
+    std::cout << "\n===== RESULTADO FINAL =====\n";
 
     if (pontucaoTotal >= 30) {
         std::cout << "Caio fica emocionado ao ver seu nome entre os primeiros colocados da competição! Seu desempenho foi impecável!\n";
