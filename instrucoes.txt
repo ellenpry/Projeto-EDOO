@@ -9,3 +9,5 @@ g++ src\*.cpp -Iinclude -o output\Jogo.exe
 3°
 .\output\Jogo.exe
 
+Observação:
+A primeira instrução deve ser rodada uma única vez na máquina do usuário, já as duas seguintes são colocadas todas vez que o usuário desejar rodar o Jogo
