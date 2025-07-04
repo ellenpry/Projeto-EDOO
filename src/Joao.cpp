@@ -65,7 +65,7 @@ void Joao::gerarFeedback() {
 
     std::cout << "===============================\n";
 
-    pontucaoTotal = resistencia * 3 + carisma * 2 + inteligencia;
+    pontucaoTotal = inteligencia * 3 + resistencia * 2 + carisma;
 
     std::cout << "\n=== RESULTADO FINAL ===\n";
 
