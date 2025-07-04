@@ -51,9 +51,9 @@ void Menu::exibir(Jogo& jogo) {
 void Menu::mostrarPersonagens() {
     std::cout << "\n----- Personagens -----\n";
     std::cout << "João: Equilibrado, carismático e esforçado.\n";
-    std::cout << "João é um estudante que está se preparando para uma prova importante de cálculo I.\n";
+    std::cout << "João é um estudante que está se preparando para uma prova importante de cálculo I.\n\n";
     std::cout << "Caio: Resiliente, sempre buscando superação.\n";
-    std::cout << "Caio é um atleta que está se preparando para uma prova que irá definir se ele irá para as Olimpíadas.\n";
+    std::cout << "Caio é um atleta que está se preparando para uma prova que irá definir se ele irá para as Olimpíadas.\n\n";
     std::cout << "Alice: Inteligente e analítica, confia na razão.\n";
     std::cout << "Alice é uma desenvolvedora que está se preparando para uma entrevista de um cargo de liderança na sua empresa dos sonhos.\n";
 }
