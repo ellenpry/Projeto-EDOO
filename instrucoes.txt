@@ -1,0 +1,11 @@
+RODAR AS SEGUINTES INSTRUÇÕES NO TERMINAL:
+
+1° 
+mkdir output
+
+2°
+g++ src\*.cpp -Iinclude -o output\Jogo.exe
+
+3°
+.\output\Jogo.exe
+
