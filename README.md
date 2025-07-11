@@ -1,6 +1,6 @@
 # SocialQuest
 
-**SocialQuest** é um jogo interativo em C++ no terminal que simula a rotina universitária de três personagens diferentes: João, Caio e Alice. Cada um enfrenta desafios e eventos cotidianos únicos antes de uma grande prova, e o jogador é quem toma as decisões ao longo do caminho.
+**SocialQuest** é um jogo interativo em C++ no terminal que simula a rotina de três personagens diferentes: João, Caio e Alice. Cada um enfrenta desafios e eventos cotidianos únicos antes de uma grande prova, e o jogador é quem toma as decisões ao longo do caminho.
 Desenvolvido como projeto final da disciplina **EDOO - Estrutura de Dados e Orientação a Objetos**, o jogo utiliza conceitos como herança, polimorfismo, encapsulamento e orientação a eventos para representar a jornada dos estudantes de forma envolvente e reflexiva.
 
 
