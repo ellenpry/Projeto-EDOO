@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg: #559EA9;       
+  --primary: #978652;  
+  --accent: #56b9c3;
+  --text: #3a3d2d;     
+  --highlight: #697E4F;
+  --white: #fff9f4;
+  --border: #fcd56b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  background-image: url('assets/content.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: transparent; 
+  color: var(--bg);
+  padding: 2rem 1rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100px;
+  padding-top: 80px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(86, 185, 195, 0.8);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--primary); /* fundo escuro */
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: var(--white); /* texto branco */
+}
+
+/* === Título do Sobre do jeito novo com linhas antes e depois centralizado === */
+#sobre {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#sobre h2 {
+  color: #1D1003;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 0;
+  border-left: none;
+  display: inline-block;
+  text-align: center;
+}
+
+#sobre h2::before,
+#sobre h2::after {
+  content: "";
+  display: inline-block;
+  width: 5px;           /* largura da linha igual à borda antiga */
+  height: 1.8rem;       /* altura igual ao tamanho da fonte */
+  background-color: #1D1003;  /* mesma cor da borda */
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+#sobre p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+section h2 {
+  color: #1D1003;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-left: 5px solid #1D1003; /* linha da esquerda */
+  padding-left: 0.5rem;
+}
+
+
+.personagem {
+  background: #fff; /* fundo mais claro que o section, mas escuro para contraste */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #1D1003;
+  color: #1D1003; /* texto */
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+  border-radius: 6px;
+}
+
+.personagem h3 {
+  margin-top: 0;
+  color: #1D1003;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+footer {
+  background-color: #1D1003;
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Container atributos */
+.atributos-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: visible;
+  min-height: 180px;
+}
+
+.atributos-content .texto {
+  flex: 1;
+  min-width: 250px;
+  padding-left: 20px;
+  padding-right: 10px;
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+}
+
+.gif-atributos {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  width: 220px;
+  height: auto;
+  animation: quicar 0.8s ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* Container funcionalidades */
+.funcionalidades-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.funcionalidades-content .texto {
+  flex: 1;
+  min-width: 250px;
+  padding-left: 20px;
+  padding-right: 10px;
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+}
+
+.gif-funcionalidade {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 240px;
+  height: auto;
+  animation: quicar 0.8s ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* Container tecnologias */
+.tecnologia-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.tecnologia-content .texto {
+  flex: 1;
+  min-width: 250px;
+  padding-left: 20px;
+  padding-right: 10px;
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+}
+
+.gif-tecnologia {
+  position: absolute;
+  top: -50px;
+  right: -80px;
+  width: 450px;
+  height: auto;
+  animation: quicar 0.8s ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* Animação do quicar para os GIFs */
+@keyframes quicar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
