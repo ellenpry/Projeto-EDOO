@@ -1,8 +1,8 @@
 
 # 🎓 Projeto SocialQuest
 
-Projeto da disciplina de **Estrutura de Dados Orientada a Objetos**, no Centro de Informática da **Universidade de Pernambuco**, ministrada pelo Professor **Francisco Paulo Magalhães**.  
-O objetivo do trabalho foi desenvolver um jogo interativo em **C++**, aplicando conceitos fundamentais da **Programação Orientada a Objetos (POO)**, como **herança**, **polimorfismo**, **encapsulamento**, além de boas práticas de organização de código e modularidade.
+Projeto da disciplina de **Estruturas de Dados Orientadas a Objetos**, no Centro de Informática da **Universidade Federal de Pernambuco**, ministrada pelo Professor **Francisco Simões**.  
+O objetivo do projeto foi desenvolver um jogo interativo em **C++**, aplicando conceitos fundamentais da **Programação Orientada a Objetos (POO)**, como **herança**, **polimorfismo**, **encapsulamento**, além de boas práticas de organização de código e modularidade.
 
 ## 🎮 Sobre o Jogo
 
@@ -51,14 +51,14 @@ O projeto está organizado de forma modular, seguindo boas práticas de separaç
 ## 🧩 Conceitos de Orientação a Objetos Aplicados
 
 ### ✅ Herança
-Classe base **Personagem** com atributos e métodos comuns.  
+Classe base **Personagem** com atributos, métodos comuns e virtuais, transformando-a em uma classe abstrata.  
 **João**, **Caio** e **Alice** herdam dela, mantendo comportamentos compartilhados e adicionando particularidades.
 
 ### ✅ Polimorfismo
 Métodos virtuais como `inicializarEventos()`, `tomarDecisao()` e `gerarFeedback()` são sobrescritos nas classes derivadas, permitindo respostas diferentes para cada personagem.
 
 ### ✅ Encapsulamento
-Atributos são private ou protected, garantindo segurança e consistência. Alterações só ocorrem por métodos controlados.
+Atributos são private ou protected, garantindo segurança e consistência. Consultas e alterações ocorrem por meio de Getters e Setters a fim de proteger a integridade dos dados.
 
 ### ✅ Composição/Agregação
 - A classe **Jogo** possui uma composição com o personagem selecionado.
@@ -96,9 +96,9 @@ g++ src/*.cpp -Iinclude -o output/SocialQuest.exe
 
 | Nome     | GitHub                        |
 |---------|-------------------------------|
-| Millena Ellen| [@Millena](https://github.com/) |
-| Júlia Maria  | [@Julia](https://github.com/)   |
-| Lucas Emanoel| [@Lucas](https://github.com/)   |
+| Millena Ellen| [@Millena](https://github.com/ellenpry) |
+| Júlia Maria  | [@Julia](https://github.com/juliamcbezerra)   |
+| Lucas Emanoel| [@Lucas](https://github.com/Lucasesaraujo)   |
 | Vinícius Pena| [@Vinicius](https://github.com/ViniciusCavalcantiap)|
 
 ## 🔍 Divisão de Responsabilidades
@@ -108,7 +108,7 @@ g++ src/*.cpp -Iinclude -o output/SocialQuest.exe
 - **Eventos e escolhas** — Lucas  
 - **Interface e relatório final** — Vinícius  
 
-Toda a equipe colaborou na **criação dos personagens, eventos e narrativa**.
+Toda a equipe colaborou na **ideação do projeto** (criação dos personagens, eventos e narrativa).
 
 ## 📝 Conclusão
 
