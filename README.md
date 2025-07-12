@@ -64,6 +64,27 @@ Atributos são private ou protected, garantindo segurança e consistência. Cons
 - A classe **Jogo** possui uma composição com o personagem selecionado.
 - A classe **Evento** contém uma lista de **Escolhas**, representando as decisões disponíveis para o jogador.
 
+## 🎯 Benefícios da Abordagem Orientada a Objetos
+
+### ✅ Organização e Reutilização de Código  
+A herança permite que funcionalidades comuns sejam centralizadas na classe base, evitando duplicação e facilitando a manutenção.
+
+### ✅ Flexibilidade e Expansão  
+Com o polimorfismo, novas classes de personagens ou eventos podem ser adicionadas com comportamentos próprios, sem alterar o código existente.
+
+### ✅ Segurança e Controle  
+O encapsulamento protege os dados internos de alterações indevidas e ajuda a manter a integridade do jogo ao longo do tempo.
+
+### ✅ Clareza na Estrutura  
+A composição entre classes como Jogo, Personagem, Evento e Escolha torna a arquitetura mais intuitiva e modular, facilitando tanto a implementação quanto a prototipação.
+
+### ✅ Facilidade para Testes e Ajustes  
+A separação clara entre responsabilidades de cada classe torna o código mais testável e facilita a identificação de falhas ou ajustes necessários durante o desenvolvimento.
+
+### ✅ Aderência a Boas Práticas de Engenharia de Software  
+Seguir os princípios de POO aproxima o projeto de padrões profissionais, sendo uma ótima prática para trabalhos acadêmicos e projetos do mundo real.
+
+
 ## 🚀 Fluxo do Jogo
 
 1️⃣ **Início**: Execução do `main()` inicializa o jogo.  
