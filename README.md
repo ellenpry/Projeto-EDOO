@@ -119,7 +119,7 @@ g++ src/*.cpp -Iinclude -o output/SocialQuest.exe
 |---------|-------------------------------|
 | Millena Ellen| [@Millena](https://github.com/ellenpry) |
 | Júlia Maria  | [@Julia](https://github.com/juliamcbezerra)   |
-| Lucas Emanoel| [@Lucas](https://github.com/Lucasesaraujo)   |
+| Lucas Francisco| [@Lucas](https://github.com/Lucasesaraujo)   |
 | Vinícius Pena| [@Vinicius](https://github.com/ViniciusCavalcantiap)|
 
 ## 🔍 Divisão de Responsabilidades
