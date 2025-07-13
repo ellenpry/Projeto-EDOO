@@ -2,7 +2,7 @@
 
 :root {
   --bg: #559EA9;       
-  --primary: #978652;  
+  --primary: #D4AF37;  
   --accent: #56b9c3;
   --text: #3a3d2d;     
   --highlight: #697E4F;
@@ -68,7 +68,7 @@ section {
 
 /* === Título do Sobre do jeito novo com linhas antes e depois centralizado === */
 #sobre {
-  text-align: center;
+  /*text-align: center;*/
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -77,29 +77,22 @@ section {
   color: #1D1003;
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  position: relative;
-  padding-left: 0;
-  border-left: none;
-  display: inline-block;
-  text-align: center;
+  border-left: 5px solid #1D1003;
+  padding-left: 0.5rem;
+  text-align: left;
+  display: block;
 }
 
 #sobre h2::before,
 #sobre h2::after {
-  content: "";
-  display: inline-block;
-  width: 5px;           /* largura da linha igual à borda antiga */
-  height: 1.8rem;       /* altura igual ao tamanho da fonte */
-  background-color: #1D1003;  /* mesma cor da borda */
-  vertical-align: middle;
-  margin: 0 10px;
+  content: none;
 }
 
 #sobre p {
   max-width: 700px;
   margin: 0 auto;
-  color: var(--white);
   line-height: 1.5;
+  color: inherit; 
 }
 
 section h2 {
@@ -137,7 +130,7 @@ ul li {
 
 footer {
   background-color: #1D1003;
-  color: var(--white);
+  color: #d8b76e;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
@@ -265,4 +258,68 @@ footer {
   0% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
+}
+
+#links-e-video {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 2rem 1.5rem;
+  background-color: var(--primary);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: var(--white);
+}
+
+#links-e-video h2 {
+  color: #1D1003;
+  margin-bottom: 1rem;
+  border-left: 5px solid #1D1003;
+  padding-left: 0.5rem;
+}
+
+#links-e-video .caixa-branca {
+  margin-bottom: 1.5rem;
+  color: #1D1003;
+}
+
+#links-e-video .caixa-branca h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.link-box {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.link-box:hover,
+.link-box:focus {
+  text-decoration: underline;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.caixa-branca {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  color: #1D1003;
+}
+
+.caixa-branca ul li,
+.caixa-branca p,
+.caixa-branca h3,
+.caixa-branca h2 {
+  color: #1D1003;
 }
