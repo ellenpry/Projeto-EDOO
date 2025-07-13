@@ -260,7 +260,49 @@ footer {
   100% { transform: translateY(0); }
 }
 
-#links-e-video {
+.descricao-interface {
+  color: #1D1003;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.galeria-comparativa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imagem-comparativa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem-comparativa img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagem-comparativa img:hover {
+  transform: scale(1.05);
+}
+
+.legenda {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #1D1003;
+}
+
+#nossos-links {
   max-width: 800px;
   margin: 0 auto 2rem auto;
   padding: 2rem 1.5rem;
@@ -270,19 +312,19 @@ footer {
   color: var(--white);
 }
 
-#links-e-video h2 {
+#nossos-links h2 {
   color: #1D1003;
   margin-bottom: 1rem;
   border-left: 5px solid #1D1003;
   padding-left: 0.5rem;
 }
 
-#links-e-video .caixa-branca {
+#nossos-links .caixa-branca {
   margin-bottom: 1.5rem;
   color: #1D1003;
 }
 
-#links-e-video .caixa-branca h3 {
+#nossos-links .caixa-branca h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
